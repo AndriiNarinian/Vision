@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B558F3C01FDAE8DC00E17A36 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B558F3BF1FDAE8DC00E17A36 /* Utilities.swift */; };
 		B58F1C611FD9BF3B00E1EB19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58F1C601FD9BF3B00E1EB19 /* AppDelegate.swift */; };
 		B58F1C631FD9BF3B00E1EB19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58F1C621FD9BF3B00E1EB19 /* ViewController.swift */; };
 		B58F1C661FD9BF3B00E1EB19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58F1C641FD9BF3B00E1EB19 /* Main.storyboard */; };
 		B58F1C691FD9BF3B00E1EB19 /* VisionTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B58F1C671FD9BF3B00E1EB19 /* VisionTest.xcdatamodeld */; };
 		B58F1C6B1FD9BF3B00E1EB19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58F1C6A1FD9BF3B00E1EB19 /* Assets.xcassets */; };
 		B58F1C6E1FD9BF3B00E1EB19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58F1C6C1FD9BF3B00E1EB19 /* LaunchScreen.storyboard */; };
+		B58F1C761FD9BFDE00E1EB19 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B58F1C751FD9BFDE00E1EB19 /* Inceptionv3.mlmodel */; };
+		B5E730FD1FDB158500A73581 /* ImageRegistrationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E730FC1FDB158500A73581 /* ImageRegistrationRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B558F3BF1FDAE8DC00E17A36 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		B58F1C5D1FD9BF3B00E1EB19 /* VisionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58F1C601FD9BF3B00E1EB19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B58F1C621FD9BF3B00E1EB19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		B58F1C6A1FD9BF3B00E1EB19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B58F1C6D1FD9BF3B00E1EB19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B58F1C6F1FD9BF3B00E1EB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B58F1C751FD9BFDE00E1EB19 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		B5E730FC1FDB158500A73581 /* ImageRegistrationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRegistrationRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				B58F1C6C1FD9BF3B00E1EB19 /* LaunchScreen.storyboard */,
 				B58F1C6F1FD9BF3B00E1EB19 /* Info.plist */,
 				B58F1C671FD9BF3B00E1EB19 /* VisionTest.xcdatamodeld */,
+				B58F1C751FD9BFDE00E1EB19 /* Inceptionv3.mlmodel */,
+				B558F3BF1FDAE8DC00E17A36 /* Utilities.swift */,
+				B5E730FC1FDB158500A73581 /* ImageRegistrationRequest.swift */,
 			);
 			path = VisionTest;
 			sourceTree = "<group>";
@@ -140,7 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B58F1C691FD9BF3B00E1EB19 /* VisionTest.xcdatamodeld in Sources */,
+				B58F1C761FD9BFDE00E1EB19 /* Inceptionv3.mlmodel in Sources */,
+				B5E730FD1FDB158500A73581 /* ImageRegistrationRequest.swift in Sources */,
 				B58F1C631FD9BF3B00E1EB19 /* ViewController.swift in Sources */,
+				B558F3C01FDAE8DC00E17A36 /* Utilities.swift in Sources */,
 				B58F1C611FD9BF3B00E1EB19 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZL58JZZ8KD;
 				INFOPLIST_FILE = VisionTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.rolique.VisionTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZL58JZZ8KD;
 				INFOPLIST_FILE = VisionTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.rolique.VisionTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
