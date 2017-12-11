@@ -42,7 +42,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HIg-Da-Sfo">
-                                <rect key="frame" x="8" y="285.5" width="359" height="100"/>
+                                <rect key="frame" x="124" y="285.5" width="235" height="100"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,19 +52,28 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.88736872779974918" blue="0.22794618754379281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mona" translatesAutoresizingMaskIntoConstraints="NO" id="efr-Nm-xjO">
+                                <rect key="frame" x="16" y="286" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="efr-Nm-xjO" secondAttribute="height" multiplier="1:1" id="FKv-0u-AH9"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uCx-dF-7OI" secondAttribute="bottom" constant="16" id="06v-Lp-lad"/>
+                            <constraint firstItem="uCx-dF-7OI" firstAttribute="top" secondItem="efr-Nm-xjO" secondAttribute="bottom" constant="8" id="BiW-Ry-twg"/>
+                            <constraint firstItem="efr-Nm-xjO" firstAttribute="top" secondItem="3lF-G9-MKr" secondAttribute="bottom" constant="8" id="Fw1-nI-qA9"/>
                             <constraint firstItem="HIg-Da-Sfo" firstAttribute="top" secondItem="3lF-G9-MKr" secondAttribute="bottom" constant="8" id="Fxx-ih-n0e"/>
+                            <constraint firstItem="HIg-Da-Sfo" firstAttribute="leading" secondItem="efr-Nm-xjO" secondAttribute="trailing" constant="8" id="HEs-Cb-JHk"/>
                             <constraint firstItem="uCx-dF-7OI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="HZA-Ro-UIz"/>
                             <constraint firstItem="3lF-G9-MKr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="J08-mv-OAJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3lF-G9-MKr" secondAttribute="trailing" constant="16" id="Kq4-w2-XYT"/>
                             <constraint firstItem="uCx-dF-7OI" firstAttribute="width" secondItem="uCx-dF-7OI" secondAttribute="height" multiplier="4:3" id="OWI-5V-2iA"/>
-                            <constraint firstItem="HIg-Da-Sfo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="SwD-PV-RvF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HIg-Da-Sfo" secondAttribute="trailing" constant="8" id="ZZa-fb-Z93"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HIg-Da-Sfo" secondAttribute="trailing" constant="16" id="ZZa-fb-Z93"/>
                             <constraint firstItem="uCx-dF-7OI" firstAttribute="top" secondItem="HIg-Da-Sfo" secondAttribute="bottom" constant="8" id="p3k-c6-LBW"/>
                             <constraint firstItem="3lF-G9-MKr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pVl-Hu-hDO"/>
+                            <constraint firstItem="efr-Nm-xjO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qfh-7H-HMX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uCx-dF-7OI" secondAttribute="trailing" constant="16" id="r07-4E-Hcd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -75,6 +84,7 @@
                         <outlet property="previewImageView" destination="nQ4-Be-t7l" id="PG8-LL-DxD"/>
                         <outlet property="previewView" destination="uCx-dF-7OI" id="8H7-vD-vSF"/>
                         <outlet property="rectLocatorView" destination="btx-vV-9Jx" id="2Vh-KD-qCc"/>
+                        <outlet property="sampleImageView" destination="efr-Nm-xjO" id="F0m-my-hth"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -84,5 +94,6 @@
     </scenes>
     <resources>
         <image name="lava" width="160" height="160"/>
+        <image name="mona" width="800" height="800"/>
     </resources>
 </document>
